@@ -15,17 +15,21 @@
             background-color: #FFC5C5;
             font-family: Arial, sans-serif;
             user-select: none; /* Запретить выделение текста */
+            position: relative; /* Для абсолютного позиционирования дочерних элементов */
         }
         h1 {
             color: #ff4d4d;
             text-align: center;
             margin-bottom: 30px;
+            z-index: 1;
         }
         .button-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             max-width: 600px;
+            position: relative; /* Для правильного позиционирования изображений */
+            z-index: 1; /* Убедитесь, что кнопки выше изображений */
         }
         .button {
             background-color: #ff69b4;
@@ -42,18 +46,77 @@
             text-decoration: none; /* Убираем подчеркивание текста */
             text-align: center; /* Центрируем текст */
         }
+
         .button.long {
             flex: 1 1 calc(100% - 20px); /* Делаем одну кнопку длинной */
         }
+
         .button:hover {
             background-color: #ff1493;
             transform: scale(1.05);
+            animation: pulse 1s infinite; /* Пульсация при наведении */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Тень при наведении */
+            transform: translateY(-5px); /* Поднимаем кнопку */
+        }
+        
+        .mainPng {
+            display: flex;
+            justify-content: space-between; /* Распределяем изображения по бокам */
+            position: absolute; /* Абсолютное позиционирование */
+            top: 50%; /* Центруем по вертикали */
+            left: 0;
+            right: 0;
+            transform: translateY(-50%); /* Поднимаем на половину высоты */
+            z-index: 0; /* Убедитесь, что изображения ниже кнопок */
         }
 
+        .left, .right {
+            background-image: url('img/main.png'); /* Убедитесь, что это правильный путь к вашему изображению */
+            width: 330px;
+            height: 400px;
+            z-index: 0;
+            background-size: cover; /* Заполнение фона */
+            background-position: center; /* Центрируем изображение */
+        }
+
+        .right {
+            transform: rotateY(180deg); /* Отразить изображение по оси Y */
+        }
+
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        @media (max-width: 480px) {
+            .mainPng {
+                opacity: 0;
+            }
+
+            main {
+                background-image: url('img/main2.png'); /* Убедитесь, что это правильный путь к вашему изображению */
+                background-size: cover; /* Заполнение фона */
+                background-position: center; /* Центрируем изображение */
+                width: 100%;
+                padding: 100%;
+            }
+    
+        }
     </style>
 </head>
 <body>
+    <main>
+    <div class="mainPng">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+
+
     <h1>С днем святого Валентина</h1>
+
+
     <div class="button-container">
         <a href="pages/heart1.html" class="button long">Длинная кнопка</a>
         <a href="pages/heart2.html" class="button">Кнопка 2</a>
@@ -66,6 +129,7 @@
         <a href="pages/heart9.html" class="button">Кнопка 9</a>
         <a href="pages/heart10.html" class="button">Кнопка 10</a>
     </div>
+</main>
 
     <script src="js/magic.js"></script>
 </body>
