@@ -71,5 +71,10 @@ main, .holder {
 
     .card {
     padding-top: 0;
+    transform: translateY(-20%); /* Поднимаем на половину высоты */
+    }
+
+    .holder {
+        transform: translateY(-210%); /* Поднимаем на половину высоты */
     }
 }
