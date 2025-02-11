@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С днем святого Валентина</title>
+    <link rel="stylesheet" href="css/magic.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #FFC5C5;
+            font-family: Arial, sans-serif;
+            user-select: none; /* Запретить выделение текста */
+        }
+        h1 {
+            color: #ff4d4d;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .button-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 600px;
+        }
+        .button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 20px 30px; /* Увеличиваем размер кнопок */
+            margin: 10px;
+            cursor: pointer;
+            font-size: 18px; /* Увеличиваем размер шрифта */
+            transition: background-color 0.3s, transform 0.3s;
+            flex: 1 1 calc(30% - 20px); /* Задаем ширину кнопок для 3 столбиков */
+            box-sizing: border-box;
+            text-decoration: none; /* Убираем подчеркивание текста */
+            text-align: center; /* Центрируем текст */
+        }
+        .button.long {
+            flex: 1 1 calc(100% - 20px); /* Делаем одну кнопку длинной */
+        }
+        .button:hover {
+            background-color: #ff1493;
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>С днем святого Валентина</h1>
+    <div class="button-container">
+        <a href="pages/heart1.html" class="button long">Длинная кнопка</a>
+        <a href="pages/heart2.html" class="button">Кнопка 2</a>
+        <a href="pages/heart3.html" class="button">Кнопка 3</a>
+        <a href="pages/heart4.html" class="button">Кнопка 4</a>
+        <a href="pages/heart5.html" class="button">Кнопка 5</a>
+        <a href="pages/heart6.html" class="button">Кнопка 6</a>
+        <a href="pages/heart7.html" class="button">Кнопка 7</a>
+        <a href="pages/heart8.html" class="button">Кнопка 8</a>
+        <a href="pages/heart9.html" class="button">Кнопка 9</a>
+        <a href="pages/heart10.html" class="button">Кнопка 10</a>
+    </div>
+
+    <script src="js/magic.js"></script>
+</body>
+</html>
