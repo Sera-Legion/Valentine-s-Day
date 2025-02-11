@@ -1,0 +1,5 @@
+.heart {
+    position: absolute;
+    transition: transform 0.5s, opacity 0.5s; /* Плавный переход для увеличения и исчезновения */
+    opacity: 1; /* Начальная прозрачность */
+}
