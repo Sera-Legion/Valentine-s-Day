@@ -142,34 +142,35 @@
             }
         }
 
-@media (max-width: 770px) {
-    .mainPng {
-        opacity: 0; /* Скрываем изображения */
-    }
+        @media (max-width: 770px) {
+            .mainPng {
+                opacity: 0;
+            }
 
-    main {
-        background-image: url('img/main2.png'); /* Убедитесь, что это правильный путь к вашему изображению */
-        background-size: cover; /* Заполнение фона */
-        background-position: center; /* Центрируем изображение */
-        width: 100%; /* Устанавливаем ширину на 100% */
-        height: 100vh; /* Устанавливаем высоту на 100% экрана */
-        position: relative; /* Добавляем позиционирование */
-    }
+            main {
+                background-image: url('img/main2.png'); /* Убедитесь, что это правильный путь к вашему изображению */
+                background-size: cover; /* Заполнение фона */
+                background-position: center; /* Центрируем изображение */
+                width: 110%;
+                height: 110%;
+            }
+            .button-container {
+                max-width: 390px;
+                margin: auto;
+            }
 
-    .button-container {
-        max-width: 390px;
-        margin: auto;
-    }
+            .button {
+                background-color: #ff00804d;
 
-    .button {
-        background-color: #ff00804d;
-    }
 
-    body {
-        background-color: #FFC5C5; /* Убедитесь, что фон тела остается тем же */
-    }
-}
+            }
 
+            body {
+
+                
+            }
+    
+        }
     </style>
 </head>
 <body>
