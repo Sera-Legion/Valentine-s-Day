@@ -67,10 +67,6 @@ main, .holder {
     margin-top: -65px;
     }
 
-    span {
-    font-size: small;
-    }
-
     .card {
     padding-top: 0;
     transform: translateY(-20%); /* Поднимаем на половину высоты */
