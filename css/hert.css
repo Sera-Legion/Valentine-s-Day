@@ -95,7 +95,7 @@ main, .holder {
         
     }
 }
-@media (max-width: 369px) {
+@media (max-width: 375px) {
     .text {
         font-size: 11px;
     }
