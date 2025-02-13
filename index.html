@@ -84,17 +84,20 @@
             margin-right: 5%;
 
         }
-
+        
         .left {
             margin-left: 5%;
         }
 
         .decor {
-            max-width: 50px;
-            max-height: 50px;
+            max-width: 25px;
+            max-height: 25px;
             
         }
 
+        #mirror {
+            transform: rotateY(180deg);
+        }
 
         @keyframes pulse {
             0% { transform: scale(1); }
@@ -182,6 +185,11 @@
         height: 100vh; /* Устанавливаем высоту body на 100% экрана */
         overflow: hidden; /* Скрываем прокрутку, если она появляется */
     }
+    .decor {
+            max-width: 15px;
+            max-height: 15px;
+            
+        }
 }
 
 
@@ -199,7 +207,7 @@
 
 
     <div class="button-container">
-        <a href="pages/heart1.html" class="button long"><img class="decor" src="img/stiker_1.png">Аляска<img class="decor" src="img/stiker_1.png"></a>
+        <a href="pages/heart1.html" class="button long"><img class="decor" src="img/stiker_1.png">Аляска<img class="decor" id="mirror" src="img/stiker_1.png"></a>
         <a href="pages/heart2.html" class="button">Франкиши</a>
         <a href="pages/heart3.html" class="button">Пуп</a>
         <a href="pages/heart4.html" class="button">Бес</a>
