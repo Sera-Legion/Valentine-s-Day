@@ -77,4 +77,11 @@ main, .holder {
     .holder {
         transform: translateY(-210%); /* Поднимаем на половину высоты */
     }
+
+    .holder a:active {
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .holder a::selection {
+        background-color: rgba(255, 255, 255, 0);
+    }
 }
