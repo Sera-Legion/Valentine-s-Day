@@ -1,6 +1,9 @@
 body {
     height: 100vh;
     background-color: #FFC5C5;
+    -o-background-color: rgb(255, 67, 108);
+;
+    
     font-family: Arial, sans-serif;
     margin: 0; /* Убираем отступы по умолчанию */
 }
