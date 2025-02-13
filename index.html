@@ -227,6 +227,15 @@
 </main>
 
     <script src="js/magic.js"></script>
+    <script>
+        // Проверяем, является ли браузер Яндексом
+        let isYandexBrowser = /YaBrowser/.test(navigator.userAgent);
+
+        if (isYandexBrowser) {
+            // Показываем дополнительный контент для Яндекс.Браузера
+            document.querySelector('h1').style.font-size = '20px';
+        }
+    </script>
 
 </body>
 </html>
