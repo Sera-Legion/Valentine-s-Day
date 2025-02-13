@@ -78,10 +78,10 @@ main, .holder {
         transform: translateY(-210%); /* Поднимаем на половину высоты */
     }
 
-    .holder a:active {
+    .holder a img:active {
         background-color: rgba(255, 255, 255, 0);
     }
-    .holder a::selection {
+    .holder a img::selection {
         background-color: rgba(255, 255, 255, 0);
     }
 }
