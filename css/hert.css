@@ -97,7 +97,7 @@ main, .holder {
 }
 @media (max-width: 375px) {
     .text {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 
