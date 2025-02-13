@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Длинная страница для Яндекс.Браузера</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .extra-content {
+            display: none; /* Скрываем дополнительный контент по умолчанию */
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e0e0e0;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Добро пожаловать на нашу страницу!</h1>
+    <p>Это основной контент страницы.</p>
+
+    <div class="extra-content">
+        <h2>Дополнительный контент для Яндекс.Браузера</h2>
+        <p>Этот контент отображается только для пользователей Яндекс.Браузера.</p>
+    </div>
+
+    <script>
+        // Проверяем, является ли браузер Яндексом
+        var isYandexBrowser = /YaBrowser/.test(navigator.userAgent);
+
+        if (isYandexBrowser) {
+            // Показываем дополнительный контент для Яндекс.Браузера
+            document.querySelector('.extra-content').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
