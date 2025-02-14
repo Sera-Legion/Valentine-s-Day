@@ -2,8 +2,8 @@ document.body.addEventListener('click', function(e) {
     const heart = document.createElement('div');
     heart.className = 'heart';
     heart.innerText = '💗'; // Добавляем сердечко
-    heart.style.left = `${e.clientX}px`;
-    heart.style.top = `${e.clientY}px`;
+    heart.style.left = `${e.pageX}px`; // Используем pageX
+    heart.style.top = `${e.pageY}px`; // Используем pageY
 
     // Генерируем случайный размер от 30 до 100 пикселей
     const size = Math.floor(Math.random() * 31) + 10; // Размер от 30 до 100
