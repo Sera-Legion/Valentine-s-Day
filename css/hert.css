@@ -102,3 +102,9 @@ main, .holder {
     }
 }
 
+@media (max-width: 330px) {
+    .text {
+        font-size: 10px;
+    }
+}
+
